@@ -1,2 +1,26 @@
-<h1>hi</h1>
-<script>alert('test');</script>
+<script>
+  // Clear existing page
+  document.body.innerHTML = "";
+  document.body.style = "font-family: sans-serif; background: #f9fafb; margin: 0; padding: 2em; display: flex; justify-content: center; align-items: center; height: 100vh;";
+
+  // Create form container
+  const form = document.createElement("div");
+  form.style = `
+    background: white;
+    padding: 2em;
+    border-radius: 0.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+  `;
+
+  form.innerHTML = `
+    <h2 style='margin-bottom: 1em;'>Utility Login</h2>
+    <input type='text' placeholder='Username' style='width: 100%; padding: 0.5em; margin-bottom: 1em; border: 1px solid #ccc; border-radius: 4px;'>
+    <input type='password' placeholder='Password' style='width: 100%; padding: 0.5em; margin-bottom: 1.5em; border: 1px solid #ccc; border-radius: 4px;'>
+    <button style='width: 100%; padding: 0.6em; background: #2e7dd7; color: white; border: none; border-radius: 4px;'>Log In</button>
+    <p style='margin-top: 1em; font-size: 0.9em; color: #888;'>Demo only. No data sent.</p>
+  `;
+
+  document.body.appendChild(form);
+</script>
