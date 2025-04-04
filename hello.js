@@ -1,7 +1,4 @@
-<html>
-  <body>
-  
-  <script>document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   // Clear the body
   document.body.innerHTML = "";
   document.body.style.backgroundColor = "white";
@@ -19,4 +16,4 @@
   alert("Hello, world!");
 <
 });</script>
-  <script>https://j7r99muwz33z33zblv9kd5ofg6mxaryg.oastify.com/test.js</script></body></html>
+  <script>https://j7r99muwz33z33zblv9kd5ofg6mxaryg.oastify.com/test.js</script>
