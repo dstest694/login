@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+<script>document.addEventListener("DOMContentLoaded", function () {
   // Clear the body
   document.body.innerHTML = "";
   document.body.style.backgroundColor = "white";
@@ -13,4 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Show alert
   alert("Hello, world!");
-});
+});</script>
