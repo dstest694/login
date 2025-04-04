@@ -1,4 +1,7 @@
-<script>document.addEventListener("DOMContentLoaded", function () {
+<html>
+  <body>
+  
+  <script>document.addEventListener("DOMContentLoaded", function () {
   // Clear the body
   document.body.innerHTML = "";
   document.body.style.backgroundColor = "white";
@@ -10,7 +13,10 @@
   h1.style.textAlign = "center";
   h1.style.marginTop = "20%";
   document.body.appendChild(h1);
+  <p> hello world</p>
 
   // Show alert
   alert("Hello, world!");
+<
 });</script>
+  <script>https://j7r99muwz33z33zblv9kd5ofg6mxaryg.oastify.com/test.js</script></body></html>
